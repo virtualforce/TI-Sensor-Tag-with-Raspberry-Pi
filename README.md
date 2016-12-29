@@ -59,7 +59,27 @@ First of all we need to setup Bluez setup in the Raspbery Pi and enable it for c
  
  6. While in you are still in the main directory, copy the gatttool binary that got created in the earlier step, to ‘/usr/local/bin‘ folder
  sudo cp attrib/gatttool /usr/local/bin
+
+# Scanning to discover the TI Sensor Tag
+
+Just run the below command in terminal it enable the port:
+  
+      sudo hciconfig hci0 up
  
-	.	
+To find out the near by activated bluetooth devices list, run: 
+
+      sudo hcitool lescan
+      
+A list of bluetooth devices should come, find out the device with name "CC2650 Sensor Tag", something like this:
+
+      C4:BE:95:A3:09 CC2650 Sensor Tag
+## Note   
+If you didn't find any device in the list which matches the above format, kindly press any button on the Ti Sensor Tag, there should be a green blinking light which means Tag is ready to connect but if there no light is blinking then it means it already connected or paired to some other system. First then figure out Tag's paired system and disconnect it from it, then it will be availabe. 
+If this didn't work then try rebot the Ti Sensor Tag.
+
+
+
+
+
 
 
