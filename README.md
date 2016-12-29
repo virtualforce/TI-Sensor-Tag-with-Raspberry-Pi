@@ -20,7 +20,8 @@ First of all we need to setup Bluez setup in the Raspbery Pi and enable it for c
 #1. Install Bluez
 
  1. Get the latest version of Bluez (the Bluetooth Stack for Linux). One can use wget utility to download the latest tar ball as shown      below, on the Raspberry Pi terminal:
- wget http://www.kernel.org/pub/linux/bluetooth/bluez-5.32.tar.xz
+ 
+	 wget http://www.kernel.org/pub/linux/bluetooth/bluez-5.32.tar.xz   
  
  2. Before installing Bluez, the Raspberry Pi environment needs to be updated to have the following set of libraries installed on it:
 	•	glib
