@@ -17,7 +17,7 @@ as following:
 
 First of all we need to setup Bluez setup in the Raspbery Pi and enable it for connecting bluetooth devices.
 
-#1 Install Bluez
+#1. Install Bluez
 
  1. Get the latest version of Bluez (the Bluetooth Stack for Linux). One can use wget utility to download the latest tar ball as shown      below, on the Raspberry Pi terminal:
  wget http://www.kernel.org/pub/linux/bluetooth/bluez-5.32.tar.xz
@@ -60,7 +60,7 @@ First of all we need to setup Bluez setup in the Raspbery Pi and enable it for c
  6. While in you are still in the main directory, copy the gatttool binary that got created in the earlier step, to ‘/usr/local/bin‘ folder
  sudo cp attrib/gatttool /usr/local/bin
 
-# Scanning to discover the TI Sensor Tag
+#2. Scanning to discover the TI Sensor Tag
 
 Just run the below command in terminal it enable the port:
   
