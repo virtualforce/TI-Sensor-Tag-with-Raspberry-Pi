@@ -80,7 +80,29 @@ If this didn't work then try rebot the Ti Sensor Tag or restart the Raspbery Pi.
 
 #3. Pair Raspberry Pi with TI sensor Tag
 
+Bluez we earlier install, helps us in pairing with Ti Sensor Tag in order to read sensor data:
 
+Establish an interactive session:
+
+Syntax
+gatttool -b [bluetooth_adr] --interactive
+
+Command
+gatttool -b C4:BE:78:A6:09 interactive
+Once the session is establish, you will see a command prompt as following:
+
+    	[C4:BE:95:A3:09][LE]>
+Connect the Raspbery Pi device to the SensorTag:
+
+	[C4:BE:95:A3:09][LE]>connect
+Following are the set of messages you will get to see, as the connect operation is being performed, to pair up the TI Sensor Tag and the Raspberry Pi device:
+
+	Attempting to connect to C4:BE:95:A3:09
+
+	Connection successful
+
+	[C4:BE:95:A3:09][LE]>
+Now the Ti Sensor Tag is paired with the Raspbery Pi successfully Hurray!
 
 
 
