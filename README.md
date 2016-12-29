@@ -77,7 +77,7 @@ A list of bluetooth devices should come, find out the device with name "CC2650 S
 If you didn't find any device in the list which matches the above format, kindly press any button on the Ti Sensor Tag, there should be a green blinking which means Tag is ready to connect but if there no light is blinking then it means it already connected or paired to some other system. First then figure out Tag's paired system and disconnect it from it, then it will be availabe. 
 If this didn't work then try rebot the Ti Sensor Tag or restart the Raspbery Pi.
 
-
+# Pair Raspberry Pi with TI sensor Tag
 
 
 
