@@ -12,7 +12,7 @@ In this writeup, we will learn how to Connect TI Sensor Tag with Raspberry Pi vi
 
 I'm using Raspbery Pi 3 in which bluethooth is build-in, so I didn't need 'Bluetooth CSR 4.0 Dongle'.
 
-For the instalation of Bluez we folow the IMB IoT Recepie: https://developer.ibm.com/recipes/tutorials/ti-sensor-tag-and-raspberry-pi/
+For the instalation of Bluez we folow the IMB IoT R[[ecepie: https://developer.ibm.com/recipes/tutorials/ti-sensor-tag-and-raspberry-pi/[{{;kj
 as following:
 
 First of all we need to setup Bluez setup in the Raspbery Pi and enable it for connecting bluetooth devices.
@@ -77,7 +77,9 @@ A list of bluetooth devices should come, find out the device with name "CC2650 S
 If you didn't find any device in the list which matches the above format, kindly press any button on the Ti Sensor Tag, there should be a green blinking which means Tag is ready to connect but if there no light is blinking then it means it already connected or paired to some other system. First then figure out Tag's paired system and disconnect it from it, then it will be availabe. 
 If this didn't work then try rebot the Ti Sensor Tag or restart the Raspbery Pi.
 
-# Pair Raspberry Pi with TI sensor Tag
+#3. Pair Raspberry Pi with TI sensor Tag
+
+
 
 
 
