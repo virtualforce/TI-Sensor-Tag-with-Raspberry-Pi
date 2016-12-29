@@ -85,9 +85,11 @@ Bluez we earlier install, helps us in pairing with Ti Sensor Tag in order to rea
 Establish an interactive session:
 
 Syntax
+
  	gatttool -b [bluetooth_adr] --interactive
 
 Command
+
 	gatttool -b C4:BE:78:A6:09 interactive
 	
 Once the session is establish, you will see a command prompt as following:
