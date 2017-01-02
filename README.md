@@ -107,6 +107,8 @@ Following are the set of messages you will get to see, as the connect operation 
 	[C4:BE:95:A3:09][LE]>
 Now the Ti Sensor Tag is paired with the Raspbery Pi successfully Hurray!
 
+#Getting Temperature from Ti SensorTag on to Raspberry Pi
+
 
 
 
