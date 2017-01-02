@@ -129,8 +129,35 @@ You should see both IR and Ambient Temperature outputs in Hexadecimal (Hex) form
 
     Characteristic value/descriptor: 50 09 e4 0b
     
-#Note: The handles specified in the read and write above are for the TI CC2650 SensorTag only.
+#Note: 
+The handles specified in the read and write above are for the TI CC2650 SensorTag only.
 
+#5. Convert Temperature from Hex to Celsius and Fahrenheit
 
+Convert the temperatures from Hex to Degree Celsius and Fahrenheit using the appropriate conversion factor. For your convenience, the conversion of temperature from Hex to Degree Celsius and Fahrenheit has been demonstrated using a Python script.
+
+For the TI CC2650, open a Python shell and execute the following set of lines:
+
+	raw_temp_data = '50 09 e4 0b' # Start with raw data from SensorTag
+
+	raw_temp_bytes = raw_temp_data.split() # Split into individual bytes
+
+	raw_ambient_temp = int( '0x'+ raw_temp_bytes[3]+ raw_temp_bytes[2], 16) # Choose ambient temperature (reverse bytes for little 	endian)
+
+	ambient_temp_int = raw_ambient_temp >> 2 & 0x3FFF # Shift right, based on from TI
+
+	ambient_temp_celsius = float(ambient_temp_int) * 0.03125 # Convert to Celsius based on info from TI
+
+	ambient_temp_fahrenheit = (ambient_temp_celsius * 1.8) + 32 # Convert to Fahrenheit
+	
+Printing the values for the parameters ambient_temp_celsius and ambient_temp_fahrenheit, shall display the temperature readings for you:
+
+	print ambient_temp_celsius
+
+	print ambient_temp_fahrenheit
+
+#Conclusion:
+
+In this writeup, we demonstrated how quickly you can configure Sensor Tag TI CC2650, pair it with Raspberry Pi device, retrieve the sensor data on to the Raspberry Pi device in the hexadecimal format and then use scripts ( Python – In this recipe) to have the readings from temperature sensor converted to Degree Celsius and Fahrenheit. Developers can consider the Python script as template and build on top of it, to retrieve data for the remaining set of sensors.
 
 
