@@ -154,6 +154,11 @@ Printing the values for the parameters ambient_temp_celsius and ambient_temp_fah
 
 #Conclusion:
 
-In this writeup, we demonstrated how quickly you can configure Sensor Tag TI CC2650, pair it with Raspberry Pi device, retrieve the sensor data on to the Raspberry Pi device in the hexadecimal format and then use scripts ( Python – In this recipe) to have the readings from temperature sensor converted to Degree Celsius and Fahrenheit. Developers can consider the Python script as template and build on top of it, to retrieve data for the remaining set of sensors.
+In this writeup, we demonstrated how easily you can configure Sensor Tag TI CC2650 by pairing it with Raspberry Pi device via bluetooth, retrieve the sensor data on to the Raspberry Pi device in the hexadecimal format and then use scripts ( Python ) to have the readings from temperature sensor converted to Degree Celsius and Fahrenheit. 
+
+#Challenges:
+
+As it is a research based IoT solution, so there are lot of challenges I faced and some of the challenges and there work around are as followings:
+
 
 
