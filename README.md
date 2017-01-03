@@ -111,15 +111,11 @@ Now the Ti Sensor Tag is paired with the Raspbery Pi successfully Hurray!
 
 The TI Sensor Tag includes 10 low-power MEMS sensors (light, digital microphone, magnetic sensor, humidity, pressure, accelerometer, gyroscope, magnetometer, object temperature, and ambient temperature) and many more including battery percentage, external hardware button states etc. For now, we shall work on retrieving the Temperature readings from the TI Sensor Tag
 
-To retrieve temperature data onto your Raspberry Pi, you should enable the temperature sensor(s) on TI CC2650, so that it starts measuring the temperature. This data or the reading is held in a temperature designated handle and you need to read it from this handle.
-
-Think of a handle as a connection endpoint, to one of the many services offered by the bluetooth device. For instance, TI CC2650 has 10 different handles, one each for each of the MEMS sensors mentioned above.
-
 Enable the Temperature Sensor(s), by issuing the command as follows:
 
     char-write-cmd 0x24 01
 
-This activates the temperature sensors on TI CC2650, which were in standby mode
+It activates the temperature sensors on TI CC2650, which were in standby mode
 
 Now read the temperature data in hexadecimal values from this handle
 
