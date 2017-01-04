@@ -1,4 +1,4 @@
-# TI-Sensor-Tag-with-Raspberry-Pi
+# TI-Sensor-Tag-with-Raspberry-Pi and Challenges
 
 Muhammad Irfan Saleem, Senior Software Engineer, Virtual Force Pvt. Ltd.
 
