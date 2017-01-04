@@ -157,7 +157,7 @@ In this writeup, we demonstrated how easily you can configure Sensor Tag TI CC26
 
 As it is a research based IoT solution, so there are lot of challenges I faced, some of the challenges and there workarounds are as followings:
 
-#1. Didn't find Ti sensor tag in the bluetooth devices search list?
+1. Didn't find Ti sensor tag in the bluetooth devices search list?
                
 	C4:BE:95:A3:09 CC2650 Sensor Tag
 
