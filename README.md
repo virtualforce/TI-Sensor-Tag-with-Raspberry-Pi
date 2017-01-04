@@ -74,9 +74,6 @@ To find out the near by activated bluetooth devices list, run:
 A list of bluetooth devices should come, find out the device with name "CC2650 Sensor Tag", something like this:
 
       C4:BE:95:A3:09 CC2650 Sensor Tag
-## Note   
-If you didn't find any device in the list which matches the above format, kindly press any button on the Ti Sensor Tag, there should be a green blinking which means Tag is ready to connect but if there no light is blinking then it means it already connected or paired to some other system. First then figure out Tag's paired system and disconnect it from it, then it will be availabe. 
-If this didn't work then try rebot the Ti Sensor Tag or restart the Raspbery Pi.
 
 #3. Pair Raspberry Pi with TI sensor Tag
 
@@ -160,5 +157,10 @@ In this writeup, we demonstrated how easily you can configure Sensor Tag TI CC26
 
 As it is a research based IoT solution, so there are lot of challenges I faced, some of the challenges and there workarounds are as followings:
 
-1. 
+#1. Didn't find Ti sensor tag in the bluetooth devices search list?
+               
+	C4:BE:95:A3:09 CC2650 Sensor Tag
+
+If you didn't find any device in the list which matches the above format, kindly press any button on the Ti Sensor Tag, there should be a green blinking which means Tag is ready to connect but if there no light is blinking then it means it already connected or paired to some other system. First then figure out Tag's paired system and disconnect it from it, then it will be availabe. 
+If this didn't work then try rebot the Ti Sensor Tag or restart the Raspbery Pi.
 
