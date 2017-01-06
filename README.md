@@ -4,11 +4,11 @@ Muhammad Irfan Saleem, Senior Software Engineer, Virtual Force Pvt. Ltd.
 
 In this writeup, we will learn how to Connect TI Sensor Tag with Raspberry Pi via bluetooth to get Ti Sensor tag's sensor readings.
 
-# Things needed
+## Things needed
  
    Raspbery Pi 3 and TI SimpleLink SensorTag.
    
-# Get started
+## Get started
 
 I'm using Raspbery Pi 3 in which bluethooth is build-in, so I didn't need 'Bluetooth CSR 4.0 Dongle'.
 
@@ -17,7 +17,7 @@ as following:
 
 First of all we need to setup Bluez setup in the Raspbery Pi and enable it for connecting bluetooth devices.
 
-#1. Install Bluez
+##1. Install Bluez
 
  1. Get the latest version of Bluez (the Bluetooth Stack for Linux). One can use wget utility to download the latest tar ball as shown      below, on the Raspberry Pi terminal:
  
@@ -54,14 +54,14 @@ First of all we need to setup Bluez setup in the Raspbery Pi and enable it for c
  
  5. Post successful configuration, now perform make to install the Bluez
  
- sudo make
+	    sudo make
  
  Of the tools available with the Bluez package, hcitool and gatttool are the two tools that will be of our interest, during the scope of this recipe. We shall use these tools to discover bluetooth addresses of the bluetooth enabled devices, that are physically close to the Raspberry Pi device and use bluetooth services published by the devices (in our case the TI SensorTag).
  
  6. While in you are still in the main directory, copy the gatttool binary that got created in the earlier step, to ‘/usr/local/bin‘ folder
  sudo cp attrib/gatttool /usr/local/bin
 
-#2. Scanning to discover the TI Sensor Tag
+##2. Scanning to discover the TI Sensor Tag
 
 Just run the below command in terminal it enable the port:
   
@@ -75,7 +75,7 @@ A list of bluetooth devices should come, find out the device with name "CC2650 S
 
       C4:BE:95:A3:09 CC2650 Sensor Tag
 
-#3. Pair Raspberry Pi with TI sensor Tag
+##3. Pair Raspberry Pi with TI sensor Tag
 
 Bluez we earlier install, helps us in pairing with Ti Sensor Tag in order to read sensor data:
 
@@ -104,7 +104,7 @@ Following are the set of messages you will get to see, as the connect operation 
 	[C4:BE:95:A3:09][LE]>
 Now the Ti Sensor Tag is paired with the Raspbery Pi successfully Hurray!
 
-#4. Getting Temperature from Ti SensorTag on to Raspberry Pi
+##4. Getting Temperature from Ti SensorTag on to Raspberry Pi
 
 The TI Sensor Tag includes 10 low-power MEMS sensors (light, digital microphone, magnetic sensor, humidity, pressure, accelerometer, gyroscope, magnetometer, object temperature, and ambient temperature) and many more including battery percentage, external hardware button states etc. For now, we shall work on retrieving the Temperature readings from the TI Sensor Tag
 
@@ -122,10 +122,10 @@ You should see both IR and Ambient Temperature outputs in Hexadecimal (Hex) form
 
     Characteristic value/descriptor: 50 09 e4 0b
     
-#Note: 
+##Note: 
 The handles specified in the read and write above are for the TI CC2650 SensorTag only.
 
-#5. Convert Temperature from Hex to Celsius and Fahrenheit
+##5. Convert Temperature from Hex to Celsius and Fahrenheit
 
 Convert the temperatures from Hex to Degree Celsius and Fahrenheit using the appropriate conversion factor. For your convenience, the conversion of temperature from Hex to Degree Celsius and Fahrenheit has been demonstrated using a Python script.
 
@@ -149,7 +149,7 @@ Printing the values for the parameters ambient_temp_celsius and ambient_temp_fah
 
 	print ambient_temp_fahrenheit
 
-#Conclusion:
+##Conclusion:
 
 In this writeup, we demonstrated how easily you can configure Sensor Tag TI CC2650 by pairing it with Raspberry Pi device via bluetooth, retrieve the sensor data on to the Raspberry Pi device in the hexadecimal format and then use scripts ( Python ) to have the readings from temperature sensor converted to Degree Celsius and Fahrenheit. 
 
@@ -157,19 +157,19 @@ In this writeup, we demonstrated how easily you can configure Sensor Tag TI CC26
 
 As it is a research based IoT solution, so there are lot of challenges I faced, some of the challenges and there workarounds are as followings:
 
-1. Didn't find Ti sensor tag in the bluetooth devices search list?
+###1. Didn't find Ti sensor tag in the bluetooth devices search list?
                
 	C4:BE:95:A3:09 CC2650 Sensor Tag
 
 If you didn't find any device in the list which matches the above format, kindly press any button on the Ti Sensor Tag, there should be a green blinking which means Tag is ready to connect but if there no light is blinking then it means it already connected or paired to some other system. First then figure out Tag's paired system and disconnect it from it, then it will be availabe. 
 If this didn't work then try rebot the Ti Sensor Tag or restart the Raspbery Pi.
 
-2. I want to connected multiple Ti Sensor Tag with Raspberry Pi at a time.
+###2. I want to connected multiple Ti Sensor Tag with Raspberry Pi at a time.
 
 I tried different things to connect multiple Ti Sensor tags parallel with Raspberry Pi, but nothing work for me.
 I ended up this by open multiple terminal windows on Raspberry Pi and connected each Ti Sensor Tag in each window.
 
-3. Ti Sensor Tag stopped working?
+###3. Ti Sensor Tag stopped working?
 
 Ti Sensor Tag suddenly stooped working, I pressed its both button and tried out every thing but it didn't respond. The solution I found out is to eject and insert the tag's battery to rebbot the tag. If this solution didn't worked for you then try to replace the tag's battery with new one hopefully it worked. 
 
