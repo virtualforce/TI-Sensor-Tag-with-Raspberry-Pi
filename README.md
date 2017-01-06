@@ -171,3 +171,4 @@ I ended up this by open multiple terminal windows on Raspberry Pi and connected 
 
 
 
+stopped working
