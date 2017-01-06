@@ -2,11 +2,11 @@
 
 Muhammad Irfan Saleem, Senior Software Engineer, Virtual Force Pvt. Ltd.
 
-In this writeup, we will learn how to Connect TI Sensor Tag with Raspberry Pi via bluetooth to get Ti Sensor tag's sensor readings.
+In this writeup, you will learn how to Connect TI Sensor Tag with Raspberry Pi via bluetooth to get Ti Sensor tag's sensor readings and the challenges that I faced and their workarounds.
 
 ## Things needed
  
-   Raspbery Pi 3 and TI SimpleLink SensorTag.
+   Raspbery Pi 3 and TI SimpleLink SensorTag CC2650.
    
 ## Get started
 
@@ -174,4 +174,10 @@ I ended up this by open multiple terminal windows on Raspberry Pi and connected 
 Ti Sensor Tag suddenly stooped working, I pressed its both button and tried out every thing but it didn't respond. The solution I found out is to eject and insert the tag's battery to rebbot the tag. If this solution didn't worked for you then try to replace the tag's battery with new one hopefully it worked. 
 
 
+##References:
 
+####i. https://developer.ibm.com/recipes/tutorials/ti-sensor-tag-and-raspberry-pi/
+####ii. https://developer.ibm.com/recipes/tutorials/ti-sensor-tag-and-raspberry-pi/
+####iii. http://www.ti.com/tool/CC2650STK
+####iv. http://www.ti.com/tool/sensortag-sw
+####v. http://processors.wiki.ti.com/images/a/a8/BLE_SensorTag_GATT_Server.pdf
