@@ -155,7 +155,7 @@ In this writeup, we demonstrated how easily you can configure Sensor Tag TI CC26
 
 #Challenges:
 
-As it is a research based IoT solution, so there are lot of challenges I faced, some of the challenges and there workarounds are as followings:
+As it is a research based IoT solution, so there are lot of challenges I faced, some of the challenges and their workarounds are as followings:
 
 ###1. Didn't find Ti sensor tag in the bluetooth devices search list?
                
