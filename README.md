@@ -169,6 +169,9 @@ If this didn't work then try rebot the Ti Sensor Tag or restart the Raspbery Pi.
 I tried different things to connect multiple Ti Sensor tags parallel with Raspberry Pi, but nothing work for me.
 I ended up this by open multiple terminal windows on Raspberry Pi and connected each Ti Sensor Tag in each window.
 
+3. Ti Sensor Tag stopped working?
+
+Ti Sensor Tag suddenly stooped working, I pressed its both button and tried out every thing but it didn't respond. The solution I found out is to eject and insert the tag's battery to rebbot the tag. If this solution didn't worked for you then try to replace the tag's battery with new one hopefully it worked.
 
 
-stopped working
+
