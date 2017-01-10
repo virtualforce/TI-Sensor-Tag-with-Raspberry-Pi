@@ -164,10 +164,10 @@ As it is a research based IoT solution, so there are lot of challenges I faced, 
 If you didn't find any device in the list which matches the above format, kindly press any button on the Ti Sensor Tag, there should be a green blinking which means Tag is ready to connect but if there no light is blinking then it means it already connected or paired to some other system. First then figure out Tag's paired system and disconnect it from it, then it will be availabe. 
 If this didn't work then try rebot the Ti Sensor Tag or restart the Raspbery Pi.
 
-###2. I want to connected multiple Ti Sensor Tag with Raspberry Pi at a time.
+###2. I want to connect multiple Ti Sensor Tag with Raspberry Pi at a time.
 
-I tried different things to connect multiple Ti Sensor tags parallel with Raspberry Pi, but nothing work for me.
-I ended up this by open multiple terminal windows on Raspberry Pi and connected each Ti Sensor Tag in each window.
+I tried different things to connect multiple Ti Sensor tags parallel with Raspberry Pi, but nothing worked for me.
+I ended up this by opening multiple terminal windows on Raspberry Pi and connected each Ti Sensor Tag in each window.
 
 ###3. Ti Sensor Tag stopped working?
 
