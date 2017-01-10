@@ -171,7 +171,7 @@ I ended up this by opening multiple terminal windows on Raspberry Pi and connect
 
 ###3. Ti Sensor Tag stopped working?
 
-Ti Sensor Tag suddenly stooped working, I pressed its both button and tried out every thing but it didn't respond. The solution I found out is to eject and insert the tag's battery to rebbot the tag. If this solution didn't worked for you then try to replace the tag's battery with new one hopefully it worked. 
+Ti Sensor Tag suddenly stooped working, I pressed its both button and tried out every thing but it didn't respond. The solution I found out is to eject and insert the tag's battery to reboot the tag. If this solution didn't worked for you then try to replace the tag's battery with new one hopefully it worked. 
 
 
 ##References:
